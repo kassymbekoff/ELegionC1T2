@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".views.SettingsFragment">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/check_search_default_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_marginTop="8dp"
+        android:id="@+id/searchRG"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:textSize="18sp"
+            android:id="@+id/googleRB"
+            android:text="@string/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:textSize="18sp"
+            android:id="@+id/yandexRB"
+            android:text="@string/yandex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:textSize="18sp"
+            android:id="@+id/bingRB"
+            android:text="@string/bing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+</LinearLayout>
